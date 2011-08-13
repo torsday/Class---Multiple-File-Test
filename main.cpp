@@ -32,12 +32,12 @@ int main(void) {
 
     int x;
 
-    cout << endl << endl << "x: " << x;
+    cout << endl << endl << "age: " << x;
 
-    x = * testClassInstance.getValue();
+    x = * testClassInstance.getAge();
 
 
-    cout << endl << endl << "x: " << x << endl << endl;
+    cout << endl << endl << "age: " << x << endl << endl;
 
     testClassInstance.contentQuery();
 
