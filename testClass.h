@@ -15,18 +15,12 @@
 
 class TestClass {
 private:
-    int * age;
-    char name[100];
+    int * value;
 public:
     TestClass (int x); // constructor
     ~TestClass (); // destructor
-
-    void setAge(int x);
-    int * getAge();
-
-    void setName(char);
-    char getName();
-
+    void setValue(int x);
+    int * getValue();
     void contentQuery(void);
 };
 
