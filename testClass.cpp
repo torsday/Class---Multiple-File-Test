@@ -6,8 +6,9 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#include <iostream>
+
 #include "testClass.h"
+#include <iostream>
 
 using namespace std;
 
@@ -19,14 +20,21 @@ using namespace std;
 
 
 // CONSTRUCTOR
-TestClass::TestClass (int x) {
-    value = new int;
-    *value = x;
+TestClass::TestClass (int x, char array[]) {
+    age = new int;
+    *age = x;
+
+    array = "default line"
+
+// ?
+// How do you initialize a character array within a class?
+// ?
+
 }
 
 // DESTRUCTOR
 TestClass::~TestClass() {
-    delete value;
+    delete age;
 }
 
 
@@ -36,10 +44,10 @@ TestClass::~TestClass() {
 ///////////////////////
 
 // Sets a reference to the Value
-void TestClass::setValue(int x) {
+void TestClass::setAge(int x) {
     //year = new int;
     
-    *value = x;
+    *age = x;
 }
 
 
@@ -50,8 +58,8 @@ void TestClass::setValue(int x) {
 
 
 // Returns a reference to the YEAR
-int * TestClass::getValue() {
-    return value;
+int * TestClass::getAge() {
+    return age;
 }
 
 
