@@ -15,12 +15,13 @@
 
 class TestClass {
 private:
-    int * value;
+    int * varInt;
+	char varArrayChar[100];
 public:
     TestClass (int x); // constructor
     ~TestClass (); // destructor
-    void setValue(int x);
-    int * getValue();
+    void setVarInt(int x);
+    int * getVarInt();
     void contentQuery(void);
 };
 

@@ -29,29 +29,29 @@ int main(void) {
 	
 
     TestClass testClassInstance(6);
-
+/*
     int x;
 
     cout << endl << endl << "x: " << x;
 
-    x = * testClassInstance.getValue();
+    x = * testClassInstance.getVarInt();
 
 
     cout << endl << endl << "x: " << x << endl << endl;
-
+*/
     testClassInstance.contentQuery();
 
     
     /*
     int usersInput = 0;
-    TestClass usersValue = new TestClass
+    TestClass usersvarInt = new TestClass
 
-    cout << endl << "Your initial value is: " << usersValue;
+    cout << endl << "Your initial varInt is: " << usersvarInt;
 	cout << endl << endl << "Enter a number" << endl;
     cout << "Enter: ";
     cin >> usersInput;
     cin.ignore(100, '\n');
-    cout << endl << "Your final value is: " << usersValue;
+    cout << endl << "Your final varInt is: " << usersvarInt;
     cout << endl << endl;
     */
 	

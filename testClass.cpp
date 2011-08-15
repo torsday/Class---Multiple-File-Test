@@ -20,13 +20,13 @@ using namespace std;
 
 // CONSTRUCTOR
 TestClass::TestClass (int x) {
-    value = new int;
-    *value = x;
+    varInt = new int;
+    *varInt = x;
 }
 
 // DESTRUCTOR
 TestClass::~TestClass() {
-    delete value;
+    delete varInt;
 }
 
 
@@ -35,11 +35,11 @@ TestClass::~TestClass() {
 /////// Setters ////////
 ///////////////////////
 
-// Sets a reference to the Value
-void TestClass::setValue(int x) {
+// Sets a reference to the varInt
+void TestClass::setVarInt(int x) {
     //year = new int;
     
-    *value = x;
+    *varInt = x;
 }
 
 
@@ -50,8 +50,8 @@ void TestClass::setValue(int x) {
 
 
 // Returns a reference to the YEAR
-int * TestClass::getValue() {
-    return value;
+int * TestClass::getVarInt() {
+    return varInt;
 }
 
 
@@ -64,10 +64,10 @@ int * TestClass::getValue() {
 
 // Prompts for and receives input
 void TestClass::contentQuery(void) {
-    cout << endl << "hello, this is a test of the input method" << endl;
-    //cout << "What value would you like for x?" << endl << "enter: ";
-    //cin >> *value;
-    //cout << endl << endl << "I got " << value << endl;
+    //cout << endl << "hello, this is a test of the input method" << endl;
+    cout << "Give me an integer?" << endl << "feed me here: ";
+    cin >> *varInt;
+    cout << endl << endl << "I got " << *varInt << " stored at the location " << varInt << endl << endl << endl;
     
     //cout << "What is the Month? (give a number)" << endl << "enter: ";
     //cin.get(month, 1);
