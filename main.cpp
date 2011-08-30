@@ -4,7 +4,8 @@
 ///////////////////////////
 
 #include <iostream>
-#include "testClass.h"
+#include "primaryClass.h"
+#include "secondaryClass.h"
 
 using namespace std;
 
@@ -28,9 +29,9 @@ using namespace std;
 int main(void) {
 	
 
-    TestClass testClassInstance(6);
+    PrimaryClass primaryClassInstance(6);
 
-	testClassInstance.contentQuery();
+	primaryClassInstance.contentQuery();
 
 	
 	return 0;
@@ -58,7 +59,7 @@ int main(void) {
 
 	    cout << endl << endl << "x: " << x;
 
-	    x = * testClassInstance.getVarInt();
+	    x = * primaryClassInstance.getVarInt();
 
 
 	    cout << endl << endl << "x: " << x << endl << endl;
@@ -68,7 +69,7 @@ int main(void) {
 
 	    /*
 	    int usersInput = 0;
-	    TestClass usersvarInt = new TestClass
+	    PrimaryClass usersvarInt = new PrimaryClass
 
 	    cout << endl << "Your initial varInt is: " << usersvarInt;
 		cout << endl << endl << "Enter a number" << endl;

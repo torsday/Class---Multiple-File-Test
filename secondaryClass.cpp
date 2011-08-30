@@ -1,5 +1,5 @@
 //
-//  testClass.cpp
+//  secondaryClass.cpp
 //  Class & Multiple File Test
 //
 //  Created by Chris Torstenson on 8/10/11.
@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "testClass.h"
+#include "secondaryClass.h"
 
 using namespace std;
 
@@ -19,19 +19,19 @@ using namespace std;
 
 
 // CONSTRUCTOR w/ no argument
-TestClass::TestClass () {
+SecondaryClass::SecondaryClass () {
     varInt = new int;
     *varInt = '0';
 }
 
 // CONSTRUCTOR w/ 1 argument
-TestClass::TestClass (int x) {
+SecondaryClass::SecondaryClass (int x) {
     varInt = new int;
     *varInt = x;
 }
 
 // DESTRUCTOR
-TestClass::~TestClass() {
+SecondaryClass::~SecondaryClass() {
     delete varInt;
 }
 
@@ -42,7 +42,7 @@ TestClass::~TestClass() {
 ///////////////////////
 
 // Sets a reference to the varInt
-void TestClass::setVarInt(int x) {
+void SecondaryClass::setVarInt(int x) {
     //year = new int;
     
     *varInt = x;
@@ -56,7 +56,7 @@ void TestClass::setVarInt(int x) {
 
 
 // Returns a reference to the YEAR
-int * TestClass::getVarInt() {
+int * SecondaryClass::getVarInt() {
     return varInt;
 }
 
@@ -69,9 +69,10 @@ int * TestClass::getVarInt() {
 
 
 // Prompts for and receives input
-void TestClass::contentQuery(void) {
+void SecondaryClass::contentQuery(void) {
     //cout << endl << "hello, this is a test of the input method" << endl;
-    cout << "Give me an integer?" << endl << "feed me here: ";
+	cout << "You have entered the Secondary Class" << endl;
+	cout << "Give me an integer?" << endl << "feed me here: ";
     cin >> *varInt;
 	cin.ignore (100, '\n');
     cout << endl << endl << "I got " << *varInt << " stored at the location " << varInt << endl << endl << endl;
