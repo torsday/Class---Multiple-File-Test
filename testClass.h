@@ -18,7 +18,8 @@ private:
     int * varInt;
 	char varArrayChar[100];
 public:
-    TestClass (int x); // constructor
+    TestClass (); // constructor
+	TestClass (int x); // constructor
     ~TestClass (); // destructor
     void setVarInt(int x);
     int * getVarInt();

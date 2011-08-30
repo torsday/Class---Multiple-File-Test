@@ -14,11 +14,17 @@ using namespace std;
 
 
 ////////////////////////////////////////////
-/////// CONSTRUCTORS & DeSTRUCTORS ////////
+/////// CONSTRUCTORS & DeSTRUCTORS //////// 
 //////////////////////////////////////////
 
 
-// CONSTRUCTOR
+// CONSTRUCTOR w/ no argument
+TestClass::TestClass () {
+    varInt = new int;
+    *varInt = '0';
+}
+
+// CONSTRUCTOR w/ 1 argument
 TestClass::TestClass (int x) {
     varInt = new int;
     *varInt = x;
@@ -67,8 +73,15 @@ void TestClass::contentQuery(void) {
     //cout << endl << "hello, this is a test of the input method" << endl;
     cout << "Give me an integer?" << endl << "feed me here: ";
     cin >> *varInt;
+	cin.ignore (100, '\n');
     cout << endl << endl << "I got " << *varInt << " stored at the location " << varInt << endl << endl << endl;
     
+
+	cout << "and now give me a word or two" << endl << "enter: ";
+	cin.get(varArrayChar, 100);
+	cin.ignore (100, '\n');
+	cout << endl << endl << "I got: " << varArrayChar << " stored at the location: " << &varArrayChar << endl << endl;
+	
     //cout << "What is the Month? (give a number)" << endl << "enter: ";
     //cin.get(month, 1);
     //cin.ignore(5, '\n');
