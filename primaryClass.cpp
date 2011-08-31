@@ -70,17 +70,23 @@ int * PrimaryClass::getVarInt() {
 
 // Prompts for and receives input
 void PrimaryClass::contentQuery(void) {
-    //cout << endl << "hello, this is a test of the input method" << endl;
-    cout << "Give me an integer?" << endl << "feed me here: ";
+
+    // Primary Class Input
+
+    cout << "Enter an integer to be stored in the Primary Class" << endl << "enter: ";
     cin >> *varInt;
 	cin.ignore (100, '\n');
     cout << endl << endl << "I got " << *varInt << " stored at the location " << varInt << endl << endl << endl;
     
 
-	cout << "and now give me a word or two" << endl << "enter: ";
+	cout << "and now give me a word or two to be stored in the Primary Class" << endl << "enter: ";
 	cin.get(varArrayChar, 100);
 	cin.ignore (100, '\n');
-	cout << endl << endl << "I got: " << varArrayChar << " stored at the location: " << &varArrayChar << endl << endl;
+	cout << endl << endl << "You said: " << varArrayChar << endl << " stored at the location: " << &varArrayChar << endl << endl;
+	
+	
+	InstanceOfSecClass.contentQuery();
+	
 	
     //cout << "What is the Month? (give a number)" << endl << "enter: ";
     //cin.get(month, 1);

@@ -5,7 +5,6 @@
 
 #include <iostream>
 #include "primaryClass.h"
-#include "secondaryClass.h"
 
 using namespace std;
 

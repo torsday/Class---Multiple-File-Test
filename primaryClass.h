@@ -19,13 +19,22 @@ class PrimaryClass {
 private:
     int * varInt;
 	char varArrayChar[100];
-	SecondaryClass InstanceOfSecClass();
+	SecondaryClass InstanceOfSecClass;
 public:
+	
+	// Constructors & Destructors
+	
     PrimaryClass (); // constructor
 	PrimaryClass (int x); // constructor
     ~PrimaryClass (); // destructor
+
+	// Setters & Getters
+	
     void setVarInt(int x);
     int * getVarInt();
+
+	// Other
+
     void contentQuery(void);
 };
 

@@ -72,13 +72,13 @@ int * SecondaryClass::getVarInt() {
 void SecondaryClass::contentQuery(void) {
     //cout << endl << "hello, this is a test of the input method" << endl;
 	cout << "You have entered the Secondary Class" << endl;
-	cout << "Give me an integer?" << endl << "feed me here: ";
+	cout << "Give me an integer for the secondary class?" << endl << "feed me here: ";
     cin >> *varInt;
 	cin.ignore (100, '\n');
     cout << endl << endl << "I got " << *varInt << " stored at the location " << varInt << endl << endl << endl;
     
 
-	cout << "and now give me a word or two" << endl << "enter: ";
+	cout << "and now give me a word or two for the secondary class" << endl << "enter: ";
 	cin.get(varArrayChar, 100);
 	cin.ignore (100, '\n');
 	cout << endl << endl << "I got: " << varArrayChar << " stored at the location: " << &varArrayChar << endl << endl;
